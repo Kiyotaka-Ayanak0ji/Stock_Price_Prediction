@@ -6,8 +6,8 @@ import datetime as dt
 import yfinance as yfin
 
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense,Dropout,LSTM
+from keras.models import Sequential
+from keras.layers import Dense,Dropout,LSTM
 
 #Long short term memory (LSTM)
 
@@ -16,7 +16,7 @@ yfin.pdr_override()
 company = "GOOG"
 
 start = dt.datetime(2022,5,1)
-end = dt.datetime(2023,6,26)
+end = dt.datetime(2024,3,29)
 
 
 data = web.get_data_yahoo(company , start , end)
